@@ -1,4 +1,4 @@
-# Bucles [Python]
+# Condicionales [Python]
 # Ejercicios de profundización
 
 # Autor: Inove Coding School
@@ -12,26 +12,32 @@
 
 # IMPORTANTE: NO borrar los comentarios en VERDE o NARANJA
 
+# Ejercicios de práctica con números
 '''
 Enunciado:
-Realice una calculadora:
-Dentro de un bucle se debe ingresar por línea de comando dos números
-Luego se ingresará como tercera entrada al programa el símbolo de la operación
-que se desea ejecutar:
-- Suma (+)
-- Resta (-)
-- Multiplicación (*)
-- División (/)
-- Exponente/Potencia (**)
-Se debe efectuar el cálculo correcto según la operación ingresada por consola
-Imprimir en pantalla la operación realizada y el resultado
-
-El programa se debe repetir dentro del bucle hasta que como operador
-se ingrese la palabra "FIN", en ese momento debe terminar el programa
-
-Se debe debe imprimir un cartel de error si el operador ingresado no es
-alguno de lo soportados o no es la palabra "FIN".
+Realice un programa que solicite el ingreso de tres números
+enteros, y luego en cada caso informe si el número es par
+o impar.
+Para cada caso imprimir el resultado en pantalla.
 '''
 
-print("Mi Calculadora (^_^)")
+print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+numero_1=int(input("Ingrese el 1° número:"))
+numero_2=int(input("Ingrese el 2° número:"))
+numero_3=int(input("Ingrese el 3° número:"))
+
+if numero_1 % 2 == 0:
+    print("El número {} es PAR".format(numero_1))
+else:
+    print("El número {} es IMPAR".format(numero_1))
+    
+if numero_2 % 2 == 0:
+    print("El número {} es PAR".format(numero_2))
+else:
+    print("El número {} es IMPAR".format(numero_2))
+    
+if numero_3 % 2 == 0:
+        print("El número {} es PAR".format(numero_3))
+else:
+    print("El número {} es IMPAR".format(numero_3))
