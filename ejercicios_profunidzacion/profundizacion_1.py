@@ -1,4 +1,4 @@
-# Condicionales [Python]
+# Bucles [Python]
 # Ejercicios de profundización
 
 # Autor: Inove Coding School
@@ -12,22 +12,63 @@
 
 # IMPORTANTE: NO borrar los comentarios en VERDE o NARANJA
 
-# Ejercicios de práctica con números
 '''
 Enunciado:
-Realice un programa que solicite por consola 2 números
-Calcule la diferencia entre ellos e informe por pantalla
-si el resultado es positivo, negativo o cero.
+Realice un programa que pida por consola dos números que representen
+el principio y fin de una secuencia numérica.
+Realizar un bucle "for" que recorra esa secuencia armada con "range"
+y cuente cuantos números ingresados hay, y la sumatoria de todos los números.
+Al finalizar el bucle, utilice la variable "cantidad_numeros" y la variable
+"sumatoria" para calcular el promedio de todos los números ingresados.
+Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
+sino que va hasta el anterior.
 '''
 
-print('Ejercicios de práctica con números')
+print('Comenzamos a ponernos serios!')
 # Empezar aquí la resolución del ejercicio
-numero_1=int(input("Ingrese un número:"))
-numero_2=int(input("Ingrese otro número:"))
-resultado= numero_1 - numero_2
-if resultado > 0:
-    print("La diferencia entre {} y {} es: {} y es POSITIVA".format(numero_1,numero_2,resultado))
-elif resultado < 0:
-    print("La diferencia entre {} y {} es: {} y es NEGATIVA".format(numero_1,numero_2,resultado))
-else:
-    print("La diferencia entre {} y {} es CERO".format(numero_1,numero_2))
+
+# inicio = ....
+inicio = int(input("Ingrese el primer valor de la lista:"))
+# fin = ....
+fin = int(input("Ingrese el último valor de la lista:"))
+
+# cantidad_numeros ....
+# sumatoria ....
+suma = 0
+cantidad = 0
+# bucle.....
+for num in range(inicio,fin+1):
+    suma += num
+    cantidad += 1
+# Al terminar el bucle calcular el promedio como:
+# promedio = sumatoria / cantidad_numeros
+promedio= suma / cantidad
+print("Se ingresaron {} numeros".format(cantidad))
+# Imprimir resultado en pantalla
+print("El promedio de los elementos de la lista es {}".format(promedio))
+
+
+'''
+#PERSONALIZANDO UN POCO EL EJERCICIO
+# inicio = ....
+inicio = int(input("Ingrese el primer valor de la lista:"))
+# fin = ....
+fin = int(input("Ingrese el último valor de la lista:"))
+
+# cantidad_numeros ....
+# sumatoria ....
+suma = 0
+cantidad = 0
+# bucle.....
+for i in range(inicio,fin+1):
+    num= int(input("Ingrese un numero:"))
+    suma= suma + num
+    cantidad += 1
+# Al terminar el bucle calcular el promedio como:
+# promedio = sumatoria / cantidad_numeros
+promedio= suma / cantidad
+# Imprimir resultado en pantalla
+print("Se ingresaron  numeros".format(cantidad))
+print("El promedio de los elementos de la lista es ".format(promedio))
+
+'''
